@@ -1,69 +1,306 @@
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import AppPreview from "@/components/AppPreview";
+import DownloadBanner from "@/components/DownloadBanner";
+import FloatingMascot from "@/components/FloatingMascot";
+
+const questions = [
+  [
+    "Can I download Lovydate yet?",
+    "Lovydate is in early access preparation. Join the waitlist on this page for launch updates and early beta access.",
+  ],
+  [
+    "Who is Lovydate for?",
+    "Lovydate is for singles across Nepal who want to meet people and explore authentic romantic connections.",
+  ],
+  [
+    "How does matching work?",
+    "Create your profile, share your interests, and discover people. When you both like each other, it’s a match and you can start a conversation.",
+  ],
+  [
+    "How does Lovydate protect user safety?",
+    "We enforce selfie verification, private encrypted messaging, and 24/7 in-app reporting and blocking tools.",
+  ],
+  [
+    "What happens when I join the waitlist?",
+    "Your contact details are saved for early access updates. Joining the waitlist reserves your place for the official launch.",
+  ],
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.js
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div id="top">
+      <a href="#main-content" className="skip-link">
+        Skip to content
+      </a>
+      <Navbar />
+
+      <main id="main-content">
+        <Hero />
+
+        {/* Minimal Red Accent Strip */}
+        <div className="manifesto-strip" aria-hidden="true" />
+
+        {/* Experience Section */}
+        <section id="experience" className="experience section-pad wrap">
+          <div className="section-heading text-center">
+            <p className="eyebrow">A LITTLE MORE YOU</p>
+            <h2>
+              More than a profile.<br />
+              <em>A whole person.</em>
+            </h2>
+            <p>
+              Your quirks, passions, and everyday moments. Make room for a
+              connection that goes beyond a photo.
+            </p>
+          </div>
+
+          <div id="features" className="feature-grid">
+            <article className="feature-card feature-red">
+              <div className="feature-card-top">
+                <span>01 / THE SPARK</span>
+              </div>
+              <h3>
+                Same wavelength.<br />
+                New possibilities.
+              </h3>
+              <p>
+                Share your interests and what you’re looking for. Discover
+                someone with a little more in common.
+              </p>
+              <div className="interest-tags">
+                <span>Music</span>
+                <span>Travel</span>
+                <span>Coffee</span>
+                <span>Adventure</span>
+              </div>
+            </article>
+
+            <article className="feature-card feature-blush">
+              <div className="feature-card-top">
+                <span>02 / THE CONNECTION</span>
+              </div>
+              <h3>
+                A mutual yes.<br />
+                A better hello.
+              </h3>
+              <p>
+                When the feeling goes both ways, the conversation opens. Start
+                with something you noticed about them.
+              </p>
+              <div className="feature-footnote">
+                <span>Good things start with mutual interest.</span>
+              </div>
+            </article>
+
+            <article className="feature-card feature-paper">
+              <div className="feature-card-top">
+                <span>03 / THE REAL YOU</span>
+              </div>
+              <h3>
+                Let your<br />
+                personality lead.
+              </h3>
+              <p>
+                Bring your photos, prompts, and everyday moments together. Give
+                someone a reason to be curious.
+              </p>
+              <div className="feature-footnote">
+                <span>A little personality goes a long way.</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        {/* Clean App Showcase */}
+        <AppPreview />
+
+        {/* How It Works (Step-by-step visual journey) */}
+        <section id="how-it-works" className="how-section section-pad">
+          <div className="wrap">
+            <div className="section-heading text-center">
+              <p className="eyebrow">FROM FIRST LOOK TO FIRST DATE</p>
+              <h2>
+                Less overthinking.<br />
+                <em>More butterflies.</em>
+              </h2>
+              <p>
+                Meeting someone special shouldn’t feel complicated.
+              </p>
+            </div>
+
+            <div className="steps-grid">
+              <div className="step-item">
+                <div className="step-img-wrap">
+                  <Image
+                    src="/assets/step_1_profile.jpg"
+                    alt="Show up as yourself"
+                    fill
+                    sizes="(max-width: 760px) 100vw, 33vw"
+                    className="step-photo"
+                  />
+                  <span className="step-num">01</span>
+                </div>
+                <h3>Show up as yourself</h3>
+                <p>
+                  Add your photos, interests, and the little things that make
+                  you, you.
+                </p>
+              </div>
+
+              <div className="step-item">
+                <div className="step-img-wrap">
+                  <Image
+                    src="/assets/step_2_match.jpg"
+                    alt="Find a mutual spark"
+                    fill
+                    sizes="(max-width: 760px) 100vw, 33vw"
+                    className="step-photo"
+                  />
+                  <span className="step-num">02</span>
+                </div>
+                <h3>Find a mutual spark</h3>
+                <p>
+                  Explore profiles. Like someone who catches your eye. See if
+                  they feel it too.
+                </p>
+              </div>
+
+              <div className="step-item">
+                <div className="step-img-wrap">
+                  <Image
+                    src="/assets/step_3_date.jpg"
+                    alt="See where hello goes"
+                    fill
+                    sizes="(max-width: 760px) 100vw, 33vw"
+                    className="step-photo"
+                  />
+                  <span className="step-num">03</span>
+                </div>
+                <h3>See where hello goes</h3>
+                <p>
+                  Start a conversation. Take your time. Meet when you both feel
+                  ready.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Safety Section */}
+        <section id="safety" className="safety-section section-pad">
+          <div className="wrap safety-grid">
+            <div className="safety-copy">
+              <p className="eyebrow safety-eyebrow">YOUR PACE. YOUR BOUNDARIES.</p>
+              <h2>
+                Big on sparks.<br />
+                <em>Bigger on respect.</em>
+              </h2>
+              <p className="safety-intro">
+                A connection should feel good. Stay in control of who you talk to
+                and what you choose to share.
+              </p>
+              <a className="button button-light" href="#faq">
+                Let’s talk safety <ArrowUpRight size={17} />
+              </a>
+            </div>
+
+            <div className="safety-list">
+              <div className="safety-row">
+                <span className="safety-num">01</span>
+                <div>
+                  <h3>Mutual interest comes first</h3>
+                  <p>Conversations begin only when you both choose to connect.</p>
+                </div>
+              </div>
+
+              <div className="safety-row">
+                <span className="safety-num">02</span>
+                <div>
+                  <h3>You set the boundaries</h3>
+                  <p>Share at your own pace. You never owe anyone a reply.</p>
+                </div>
+              </div>
+
+              <div className="safety-row">
+                <span className="safety-num">03</span>
+                <div>
+                  <h3>Block, report, and get support</h3>
+                  <p>Use in-app controls to report a concern or end an interaction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section id="faq" className="faq-section section-pad wrap">
+          <div className="faq-header-side">
+            <p className="eyebrow">LET’S CLEAR THINGS UP</p>
+            <h2>
+              A little curious?<br />
+              <em>Good.</em>
+            </h2>
+            <p>Here’s what to know before your first hello.</p>
+          </div>
+
+          <div className="faq-list">
+            {questions.map(([q, a], index) => (
+              <details key={q} open={index === 0} className="faq-details">
+                <summary className="faq-summary">
+                  <span>{q}</span>
+                  <span className="faq-toggle-icon" aria-hidden="true">
+                    +
+                  </span>
+                </summary>
+                <p className="faq-answer">{a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        {/* Download & Waitlist Banner */}
+        <DownloadBanner />
       </main>
+
+      {/* Clean Footer with Real Logo */}
+      <footer className="footer wrap">
+        <div className="footer-top">
+          <a className="footer-brand-link" href="#top" aria-label="Lovydate home">
+            <Image
+              src="/assets/textmark_icon.png"
+              alt="Lovydate"
+              width={140}
+              height={29}
+              className="footer-logo-img"
+            />
+          </a>
+          <p className="footer-tagline">
+            A little closer to your kind of person.
+          </p>
+          <a className="text-link" href="#waitlist">
+            Your next chapter <ArrowUpRight size={16} />
+          </a>
+        </div>
+
+        <div className="footer-bottom">
+          <span>© {new Date().getFullYear()} Lovydate. Made with love in Nepal.</span>
+          <span>Authentic connections.</span>
+          <a
+            href="https://sameerlamichhane.com.np"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-author-link"
+          >
+            By Sameer Lamichhane <ArrowUpRight size={13} />
+          </a>
+        </div>
+      </footer>
+
+      {/* Support Chat Widget */}
+      <FloatingMascot />
     </div>
   );
 }
