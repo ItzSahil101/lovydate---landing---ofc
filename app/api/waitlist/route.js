@@ -3,17 +3,14 @@ import { saveWaitlistContact } from "@/lib/waitlist.mjs";
 export async function POST(request) {
   const origin = request.headers.get("origin");
   if (origin) {
-    const requestUrl = new URL(request.url);
-    let sameSiteOrigin = false;
+    let originHost = "";
     try {
       const originUrl = new URL(origin);
-      const normalizeHost = (host) => host.replace(/^www\./, "");
-      sameSiteOrigin = originUrl.protocol === requestUrl.protocol &&
-        normalizeHost(originUrl.hostname) === normalizeHost(requestUrl.hostname);
+      originHost = originUrl.hostname.toLowerCase().replace(/^www\./, "");
     } catch {
-      sameSiteOrigin = false;
+      originHost = "";
     }
-    if (!sameSiteOrigin) {
+    if (originHost !== "lovydate.fun") {
       return Response.json({ error: "This request isn't allowed." }, { status: 403 });
     }
   }
