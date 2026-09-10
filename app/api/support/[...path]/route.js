@@ -6,7 +6,19 @@ async function proxy(request, context) {
     : route === "tickets" || /^tickets\/[a-zA-Z0-9-]+\/messages$/.test(route);
   if (!allowed) return Response.json({ error: { message: "Not found." } }, { status: 404 });
   const origin = request.headers.get("origin");
-  if (request.method !== "GET" && origin && origin !== new URL(request.url).origin) {
+  const requestUrl = new URL(request.url);
+  let sameSiteOrigin = true;
+  if (origin) {
+    try {
+      const originUrl = new URL(origin);
+      const normalizeHost = (host) => host.replace(/^www\./, "");
+      sameSiteOrigin = originUrl.protocol === requestUrl.protocol &&
+        normalizeHost(originUrl.hostname) === normalizeHost(requestUrl.hostname);
+    } catch {
+      sameSiteOrigin = false;
+    }
+  }
+  if (request.method !== "GET" && origin && !sameSiteOrigin) {
     return Response.json({ error: { message: "This request isn't allowed." } }, { status: 403 });
   }
   const configured = process.env.API_URL || process.env.NEXT_PUBLIC_API_URL;

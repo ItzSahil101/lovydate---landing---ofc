@@ -1,8 +1,21 @@
 import { saveWaitlistContact } from "@/lib/waitlist.mjs";
 
 export async function POST(request) {
-  if (request.headers.get("origin") && request.headers.get("origin") !== new URL(request.url).origin) {
-    return Response.json({ error: "This request isn't allowed." }, { status: 403 });
+  const origin = request.headers.get("origin");
+  if (origin) {
+    const requestUrl = new URL(request.url);
+    let sameSiteOrigin = false;
+    try {
+      const originUrl = new URL(origin);
+      const normalizeHost = (host) => host.replace(/^www\./, "");
+      sameSiteOrigin = originUrl.protocol === requestUrl.protocol &&
+        normalizeHost(originUrl.hostname) === normalizeHost(requestUrl.hostname);
+    } catch {
+      sameSiteOrigin = false;
+    }
+    if (!sameSiteOrigin) {
+      return Response.json({ error: "This request isn't allowed." }, { status: 403 });
+    }
   }
   if (Number(request.headers.get("content-length")) > 2048) {
     return Response.json({ error: "Request is too large." }, { status: 413 });
