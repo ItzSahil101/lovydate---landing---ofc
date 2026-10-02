@@ -289,12 +289,12 @@ export default function Home() {
           <span>© {new Date().getFullYear()} Lovydate. Made with love in Nepal.</span>
           <span>Authentic connections.</span>
           <a
-            href="https://sameerlamichhane.com.np"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="footer-author-link"
           >
-            By Sameer Lamichhane <ArrowUpRight size={13} />
+            By Lovydate Group<ArrowUpRight size={13} />
           </a>
         </div>
       </footer>
