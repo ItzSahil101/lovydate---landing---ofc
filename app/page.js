@@ -48,7 +48,8 @@ export default function Home() {
           <div className="section-heading text-center">
             <p className="eyebrow">A LITTLE MORE YOU</p>
             <h2>
-              More than a profile.<br />
+              More than a profile.
+              <br />
               <em>A whole person.</em>
             </h2>
             <p>
@@ -63,7 +64,8 @@ export default function Home() {
                 <span>01 / THE SPARK</span>
               </div>
               <h3>
-                Same wavelength.<br />
+                Same wavelength.
+                <br />
                 New possibilities.
               </h3>
               <p>
@@ -83,8 +85,8 @@ export default function Home() {
                 <span>02 / THE CONNECTION</span>
               </div>
               <h3>
-                A mutual yes.<br />
-                A better hello.
+                A mutual yes.
+                <br />A better hello.
               </h3>
               <p>
                 When the feeling goes both ways, the conversation opens. Start
@@ -100,7 +102,8 @@ export default function Home() {
                 <span>03 / THE REAL YOU</span>
               </div>
               <h3>
-                Let your<br />
+                Let your
+                <br />
                 personality lead.
               </h3>
               <p>
@@ -123,12 +126,11 @@ export default function Home() {
             <div className="section-heading text-center">
               <p className="eyebrow">FROM FIRST LOOK TO FIRST DATE</p>
               <h2>
-                Less overthinking.<br />
+                Less overthinking.
+                <br />
                 <em>More butterflies.</em>
               </h2>
-              <p>
-                Meeting someone special shouldn’t feel complicated.
-              </p>
+              <p>Meeting someone special shouldn’t feel complicated.</p>
             </div>
 
             <div className="steps-grid">
@@ -193,14 +195,17 @@ export default function Home() {
         <section id="safety" className="safety-section section-pad">
           <div className="wrap safety-grid">
             <div className="safety-copy">
-              <p className="eyebrow safety-eyebrow">YOUR PACE. YOUR BOUNDARIES.</p>
+              <p className="eyebrow safety-eyebrow">
+                YOUR PACE. YOUR BOUNDARIES.
+              </p>
               <h2>
-                Big on sparks.<br />
+                Big on sparks.
+                <br />
                 <em>Bigger on respect.</em>
               </h2>
               <p className="safety-intro">
-                A connection should feel good. Stay in control of who you talk to
-                and what you choose to share.
+                A connection should feel good. Stay in control of who you talk
+                to and what you choose to share.
               </p>
               <a className="button button-light" href="#faq">
                 Let’s talk safety <ArrowUpRight size={17} />
@@ -212,7 +217,9 @@ export default function Home() {
                 <span className="safety-num">01</span>
                 <div>
                   <h3>Mutual interest comes first</h3>
-                  <p>Conversations begin only when you both choose to connect.</p>
+                  <p>
+                    Conversations begin only when you both choose to connect.
+                  </p>
                 </div>
               </div>
 
@@ -228,7 +235,10 @@ export default function Home() {
                 <span className="safety-num">03</span>
                 <div>
                   <h3>Block, report, and get support</h3>
-                  <p>Use in-app controls to report a concern or end an interaction.</p>
+                  <p>
+                    Use in-app controls to report a concern or end an
+                    interaction.
+                  </p>
                 </div>
               </div>
             </div>
@@ -240,7 +250,8 @@ export default function Home() {
           <div className="faq-header-side">
             <p className="eyebrow">LET’S CLEAR THINGS UP</p>
             <h2>
-              A little curious?<br />
+              A little curious?
+              <br />
               <em>Good.</em>
             </h2>
             <p>Here’s what to know before your first hello.</p>
@@ -261,6 +272,51 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Team Section */}
+        <section className="team-section">
+          <div className="team-inner">
+            <div className="team-heading">
+              <p className="section-label">THE PEOPLE BEHIND LOVYDATE</p>
+
+              <h2>
+                Built with intention.
+                <br />
+                <span>Led with purpose.</span>
+              </h2>
+            </div>
+
+            <div className="team-people">
+              <div className="team-person">
+                <div className="team-person-top">
+                  <span className="team-role">FOUNDER & OWNER</span>
+                  <span className="team-index">01</span>
+                </div>
+
+                <h3>Arpan Dhangi</h3>
+
+                <p>
+                  Founder and owner of LovyDate, shaping the vision and
+                  direction behind the platform.
+                </p>
+              </div>
+
+              <div className="team-person">
+                <div className="team-person-top">
+                  <span className="team-role">CTO</span>
+                  <span className="team-index">02</span>
+                </div>
+
+                <h3>Sahil Jogi</h3>
+
+                <p>
+                  Chief Technology Officer, leading the technology and
+                  development behind LovyDate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Download & Waitlist Banner */}
         <DownloadBanner />
       </main>
@@ -268,7 +324,11 @@ export default function Home() {
       {/* Clean Footer with Real Logo */}
       <footer className="footer wrap">
         <div className="footer-top">
-          <a className="footer-brand-link" href="#top" aria-label="Lovydate home">
+          <a
+            className="footer-brand-link"
+            href="#top"
+            aria-label="Lovydate home"
+          >
             <Image
               src="/assets/textmark_icon.png"
               alt="Lovydate"
@@ -286,7 +346,9 @@ export default function Home() {
         </div>
 
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} Lovydate. Made with love in Nepal.</span>
+          <span>
+            © {new Date().getFullYear()} Lovydate. Made with love in Nepal.
+          </span>
           <span>Authentic connections.</span>
           <a
             href=""
@@ -294,7 +356,8 @@ export default function Home() {
             rel="noopener noreferrer"
             className="footer-author-link"
           >
-            By Lovydate Group<ArrowUpRight size={13} />
+            Founded by Arpan Dhangi · CTO & Developer Sahil Jogi
+            <ArrowUpRight size={13} />
           </a>
         </div>
       </footer>

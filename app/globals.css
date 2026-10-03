@@ -2384,3 +2384,186 @@ svg {
   }
 }
 
+
+
+/* ================================
+   TEAM SECTION
+================================ */
+
+.team-section {
+  width: 100%;
+  padding: 130px 0 140px;
+
+  background: #DBDBDB;
+
+  color: #292925;
+
+  border-top: 1px solid rgba(25, 25, 20, 0.08);
+}
+
+.team-inner {
+  position: relative;
+  z-index: 1;
+
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+
+/* ================================
+   TEAM HEADING
+================================ */
+
+.team-heading {
+  max-width: 760px;
+}
+
+.team-heading .section-label {
+  color: #625f56;
+}
+
+.team-heading h2 {
+  margin: 18px 0 0;
+
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 0.94;
+
+  letter-spacing: -4px;
+
+  color: #292925;
+}
+
+.team-heading h2 span {
+  color: #a9572b;
+}
+
+
+/* ================================
+   TEAM PEOPLE
+================================ */
+
+.team-people {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  margin-top: 100px;
+
+  border-top: 1px solid rgba(25, 25, 20, 0.25);
+}
+
+.team-person {
+  min-height: 190px;
+
+  padding: 28px 8px 0;
+
+  border-bottom: 1px solid rgba(25, 25, 20, 0.25);
+}
+
+.team-person + .team-person {
+  padding-left: 50px;
+
+  border-left: 1px solid rgba(25, 25, 20, 0.25);
+}
+
+
+/* ================================
+   ROLE + NUMBER
+================================ */
+
+.team-person-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-role {
+  display: block;
+
+  color: #6b6257;
+
+  font-size: 9px;
+  font-weight: 850;
+
+  letter-spacing: 1.5px;
+}
+
+.team-index {
+  color: #77746d;
+
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+
+/* ================================
+   PERSON NAME
+================================ */
+
+.team-person h3 {
+  margin: 15px 0 10px;
+
+  color: #292925;
+
+  font-size: clamp(25px, 2.7vw, 34px);
+  font-weight: 650;
+
+  letter-spacing: -1.2px;
+}
+
+
+/* ================================
+   PERSON DESCRIPTION
+================================ */
+
+.team-person p {
+  max-width: 360px;
+
+  margin: 0;
+
+  color: #504e49;
+
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+  .team-section {
+    padding: 90px 0 100px;
+  }
+
+  .team-inner {
+    width: calc(100% - 30px);
+  }
+
+  .team-heading h2 {
+    font-size: 48px;
+    letter-spacing: -2.5px;
+  }
+
+  .team-people {
+    grid-template-columns: 1fr;
+    margin-top: 65px;
+  }
+
+  .team-person {
+    min-height: auto;
+    padding: 25px 5px 30px;
+  }
+
+  .team-person + .team-person {
+    padding-left: 5px;
+
+    border-left: 0;
+  }
+
+  .team-person p {
+    max-width: 100%;
+  }
+}

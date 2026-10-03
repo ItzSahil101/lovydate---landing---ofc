@@ -51,8 +51,36 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${jakarta.variable} ${outfit.variable}`}>
       <head>
-        <link rel="icon" href="/assets/favicon_icon.png" sizes="any" />
-      </head>
+  <link rel="icon" href="/assets/favicon_icon.png" sizes="any" />
+
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://lovydate.fun/#organization",
+        "name": "Lovydate",
+        "url": "https://lovydate.fun",
+        "logo": "https://lovydate.fun/assets/branding_icon.png",
+
+        "founder": {
+          "@type": "Person",
+          "@id": "https://lovydate.fun/#arpan-dhangi",
+          "name": "Arpan Dhangi",
+          "jobTitle": "Founder and Owner"
+        },
+
+        "employee": {
+          "@type": "Person",
+          "@id": "https://lovydate.fun/#sahil-jogi",
+          "name": "Sahil Jogi",
+          "jobTitle": "Chief Technology Officer (CTO) and Developer"
+        }
+      }),
+    }}
+  />
+</head>
       <body>{children}</body>
     </html>
   );

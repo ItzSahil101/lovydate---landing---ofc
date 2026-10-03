@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 const screens = [
   {
     id: "feed",
-    title: "Curated Feed",
+    title: "Current Feed",
     subtitle: "Discover people on your wavelength",
     description:
       "Personalized discovery based on shared cultural values, passions, and relationship intentions.",
