@@ -356,7 +356,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="footer-author-link"
           >
-            Founded by Arpan Dhangi · CTO & Developer Sahil Jogi
+            Founded by Lovydate Group
             <ArrowUpRight size={13} />
           </a>
         </div>
