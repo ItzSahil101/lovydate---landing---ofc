@@ -292,7 +292,7 @@ export default function Home() {
                   <span className="team-index">01</span>
                 </div>
 
-                <h3>Arpan Dhangi</h3>
+                <h3>Arpan Dangi</h3>
 
                 <p>
                   Founder and owner of LovyDate, shaping the vision and
