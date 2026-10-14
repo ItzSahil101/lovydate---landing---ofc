@@ -272,51 +272,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="team-section">
-          <div className="team-inner">
-            <div className="team-heading">
-              <p className="section-label">THE PEOPLE BEHIND LOVYDATE</p>
-
-              <h2>
-                Built with intention.
-                <br />
-                <span>Led with purpose.</span>
-              </h2>
-            </div>
-
-            <div className="team-people">
-              <div className="team-person">
-                <div className="team-person-top">
-                  <span className="team-role">FOUNDER & OWNER</span>
-                  <span className="team-index">01</span>
-                </div>
-
-                <h3>Arpan Dangi</h3>
-
-                <p>
-                  Founder and owner of LovyDate, shaping the vision and
-                  direction behind the platform.
-                </p>
-              </div>
-
-              <div className="team-person">
-                <div className="team-person-top">
-                  <span className="team-role">CTO</span>
-                  <span className="team-index">02</span>
-                </div>
-
-                <h3>Sahil Jogi</h3>
-
-                <p>
-                  Chief Technology Officer, leading the technology and
-                  development behind LovyDate.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Download & Waitlist Banner */}
         <DownloadBanner />
       </main>
