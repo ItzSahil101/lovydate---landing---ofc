@@ -1,12 +1,202 @@
-﻿export const metadata = {
+﻿
+export const metadata = {
   title: "Privacy Policy | Lovydate",
-  description: "Privacy policy for the Lovydate dating and social networking service.",
+  description:
+    "Read how Lovydate collects, uses, shares, and protects information, and how to delete your account.",
 };
 
-const pageStyle = "\n    :root{color-scheme:light;--ink:#202124;--muted:#62666c;--line:#e6e8ec;--accent:#bd365d;--bg:#f7f7f9;--paper:#fff}\n    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}\n    header{background:var(--paper);border-bottom:1px solid var(--line);padding:38px 20px 30px}\n    .wrap{max-width:900px;margin:auto}.brand{font-weight:800;letter-spacing:.08em;color:var(--accent);font-size:.9rem}\n    h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;margin:.5rem 0}.updated{color:var(--muted);margin:0}\n    main{max-width:900px;margin:26px auto 52px;padding:0 18px}article{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:clamp(20px,4vw,42px)}\n    h2{font-size:1.25rem;line-height:1.3;margin:2rem 0 .6rem}h2:first-child{margin-top:0}p{margin:.7rem 0}li{margin:.35rem 0}\n    a{color:#a72c50;overflow-wrap:anywhere}footer{text-align:center;color:var(--muted);padding:20px 16px 36px;font-size:.9rem}\n  ";
-const pageBody = "\n\u003cheader\u003e\u003cdiv class=\"wrap\"\u003e\u003cdiv class=\"brand\"\u003eLOVYDATE\u003c/div\u003e\u003ch1\u003ePrivacy Policy\u003c/h1\u003e\u003cp class=\"updated\"\u003eLast updated: October 29, 2026\u003c/p\u003e\u003c/div\u003e\u003c/header\u003e\n\u003cmain\u003e\u003carticle\u003e\n\u003cp\u003eThis Privacy Policy explains how Lovydate (â€œLovydate,â€ â€œwe,â€ â€œus,â€ or â€œourâ€) collects, uses, shares, and protects information when you use our dating and social networking app or website.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eContact:\u003c/strong\u003e \u003ca href=\"mailto:support@lovydate.fun\"\u003esupport@lovydate.fun\u003c/a\u003e\u003cbr\u003e\u003cstrong\u003eWebsite:\u003c/strong\u003e \u003ca href=\"https://lovydate.fun/\"\u003ehttps://lovydate.fun/\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003e1. Who can use Lovydate\u003c/h2\u003e\n\u003cp\u003eLovydate is intended only for people aged 18 or older. People under 18 are not permitted to use the service. If we learn that an account belongs to someone under 18, we will take steps to disable the account and delete associated information, subject to any information we are legally required to retain. To report a suspected underage account, contact \u003ca href=\"mailto:support@lovydate.fun\"\u003esupport@lovydate.fun\u003c/a\u003e.\u003c/p\u003e\n\n\u003ch2\u003e2. Information we collect\u003c/h2\u003e\n\u003cp\u003eThe information we process depends on the features you use. It may include:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eAccount and sign-in information:\u003c/strong\u003e name, email address, date of birth, account identifiers, and information provided by Google when you choose Google sign-in.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eProfile information:\u003c/strong\u003e photos, biography, interests, gender, city or location details, and other information you choose to add to your profile.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eSocial and dating activity:\u003c/strong\u003e likes, matches, comments, posts, follows or other social interactions available in the app, and preferences you choose to share.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMessages and reports:\u003c/strong\u003e messages you send to other users, support messages, and information included in reports or safety investigations.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eLocation information:\u003c/strong\u003e location information if you grant the app the relevant device permission or choose to provide location details.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eTechnical and usage information:\u003c/strong\u003e app and website interactions, timestamps, app version, device or browser information, diagnostic events, and technical logs generated while using the service.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWe may also receive information from Google sign-in, other users (for example, when they report an account), and service providers that help us operate Lovydate.\u003c/p\u003e\n\n\u003ch2\u003e3. How we use information\u003c/h2\u003e\n\u003cp\u003eWe use information to create and secure accounts; display profiles; support dating, matching, messaging, and social networking features; respond to support requests; detect spam, fraud, harassment, and underage use; review reports and enforce our rules; maintain and improve the app and website; troubleshoot errors; and comply with legal obligations.\u003c/p\u003e\n\n\u003ch2\u003e4. Profile visibility and information you share\u003c/h2\u003e\n\u003cp\u003eInformation and content you choose to display on your profile or post publicly may be visible to other Lovydate users. Messages are shared with their intended recipients. Please think carefully before sharing personal or sensitive information. We may access or review content when necessary to respond to a report, investigate a safety concern, enforce our rules, or comply with law.\u003c/p\u003e\n\n\u003ch2\u003e5. Analytics\u003c/h2\u003e\n\u003cp\u003eLovydate uses an analytics system developed and operated by us to understand how the app and website are used and to help maintain and improve the service. This system may process technical and usage information associated with app or website activity. We do not currently use third-party advertising analytics to show ads. If our analytics practices materially change, we will update this policy as appropriate.\u003c/p\u003e\n\n\u003ch2\u003e6. Advertising\u003c/h2\u003e\n\u003cp\u003eLovydate does not currently display advertisements. If we introduce advertising in the future, we will update this Privacy Policy to explain relevant data use and sharing before or when those features become available, as required by law.\u003c/p\u003e\n\n\u003ch2\u003e7. How we share information\u003c/h2\u003e\n\u003cp\u003eWe may share information:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eWith other users:\u003c/strong\u003e profile information and content you choose to make visible, and messages with their recipients.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWith service providers:\u003c/strong\u003e providers that help with hosting, databases, sign-in, email delivery, security, and technical operations. They may process information as needed to provide services to us.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eFor safety or legal reasons:\u003c/strong\u003e when reasonably necessary to comply with law, respond to valid legal requests, investigate abuse, enforce our rules, or protect users and others.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eFor business changes:\u003c/strong\u003e in connection with a merger, acquisition, or transfer of the service, subject to applicable law.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eWith your consent:\u003c/strong\u003e when you direct us to share information or consent where required.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWe do not sell personal information for money. If this changes, we will update this policy and provide any notices or choices required by law.\u003c/p\u003e\n\n\u003ch2\u003e8. Safety and moderation\u003c/h2\u003e\n\u003cp\u003eWe may review reports and relevant content to investigate suspected fake accounts, spam, harassment, abuse, underage use, or other violations. Users should use available report and block features to protect themselves and the community. We may restrict or remove accounts that violate our rules or applicable law.\u003c/p\u003e\n\n\u003ch2\u003e9. Account deletion and retention\u003c/h2\u003e\n\u003cp\u003eYou can delete your account using the account-deletion feature in the app. When deletion is completed, we delete your account and associated personal data from our active systems immediately. Some limited information may remain in backups for a short period before those backups are overwritten, or may be retained where required by law or reasonably necessary for security, fraud prevention, legal claims, or enforcement of our rules. Where information must be retained, we limit its use to that purpose and delete it when no longer needed.\u003c/p\u003e\n\u003cp\u003eYou can also contact \u003ca href=\"mailto:support@lovydate.fun?subject=Lovydate%20account%20deletion\"\u003esupport@lovydate.fun\u003c/a\u003e for help with an account-deletion request.\u003c/p\u003e\n\n\u003ch2\u003e10. Your choices and privacy rights\u003c/h2\u003e\n\u003cp\u003eYou can update profile information in the app, manage device permissions such as location through your device settings, and delete your account. Depending on where you live, you may also have rights to request access to, correction of, or deletion of your personal information, or to object to or restrict certain processing. To make a privacy request, contact \u003ca href=\"mailto:support@lovydate.fun\"\u003esupport@lovydate.fun\u003c/a\u003e. We may need to verify your identity before responding.\u003c/p\u003e\n\n\u003ch2\u003e11. Security\u003c/h2\u003e\n\u003cp\u003eWe use reasonable technical and organizational measures intended to protect information. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.\u003c/p\u003e\n\n\u003ch2\u003e12. International processing\u003c/h2\u003e\n\u003cp\u003eInformation may be processed in countries other than your own, depending on where Lovydate and its service providers operate. Where required, we take steps intended to protect information in connection with international transfers.\u003c/p\u003e\n\n\u003ch2\u003e13. Third-party services and links\u003c/h2\u003e\n\u003cp\u003eThe app or website may rely on third-party services, including Google sign-in, or link to external websites. Those services may handle information under their own privacy policies. Please review their policies where applicable.\u003c/p\u003e\n\n\u003ch2\u003e14. Changes to this policy\u003c/h2\u003e\n\u003cp\u003eWe may update this Privacy Policy as Lovydate changes or legal requirements develop. We will update the date at the top and provide additional notice of significant changes where required.\u003c/p\u003e\n\n\u003ch2\u003e15. Contact us\u003c/h2\u003e\n\u003cp\u003eFor questions, privacy requests, or reports about underage use, contact \u003ca href=\"mailto:support@lovydate.fun\"\u003esupport@lovydate.fun\u003c/a\u003e or visit \u003ca href=\"https://lovydate.fun/\"\u003ehttps://lovydate.fun/\u003c/a\u003e.\u003c/p\u003e\n\u003c/article\u003e\u003c/main\u003e\n\u003cfooter\u003eÂ© 2026 Lovydate. All rights reserved.\u003c/footer\u003e\n";
+const pageStyle = `
+  :root {
+    color-scheme: light;
+    --ink: #202124;
+    --muted: #62666c;
+    --line: #e6e8ec;
+    --accent: #bd365d;
+    --bg: #f7f7f9;
+    --paper: #fff;
+  }
 
-export default function Page() {
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  header {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    padding: 38px 20px 30px;
+  }
+
+  .policy-wrap {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .policy-brand {
+    font-weight: 800;
+    letter-spacing: .08em;
+    color: var(--accent);
+    font-size: .9rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    line-height: 1.15;
+    margin: .5rem 0;
+  }
+
+  .policy-updated { color: var(--muted); margin: 0; }
+
+  .policy-main {
+    max-width: 900px;
+    margin: 26px auto 52px;
+    padding: 0 18px;
+  }
+
+  .policy-article {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: clamp(20px, 4vw, 42px);
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: 2rem 0 .6rem;
+  }
+
+  h2:first-child { margin-top: 0; }
+  p { margin: .7rem 0; }
+  li { margin: .35rem 0; }
+
+  a {
+    color: #a72c50;
+    overflow-wrap: anywhere;
+  }
+
+  .policy-notice {
+    background: #fff5f8;
+    border-left: 4px solid var(--accent);
+    padding: 14px 17px;
+    border-radius: 6px;
+    margin: 16px 0;
+  }
+
+  .policy-footer {
+    text-align: center;
+    color: var(--muted);
+    padding: 20px 16px 36px;
+    font-size: .9rem;
+  }
+
+  @media (max-width: 600px) {
+    header { padding: 28px 18px 24px; }
+    .policy-main { padding: 0 12px; margin-top: 18px; }
+    .policy-article { border-radius: 12px; }
+  }
+`;
+
+const pageBody = `
+<header>
+  <div class="policy-wrap">
+    <div class="policy-brand">LOVYDATE</div>
+    <h1>Privacy Policy</h1>
+    <p class="policy-updated">Last updated: October 29, 2026</p>
+  </div>
+</header>
+
+<main class="policy-main">
+<article class="policy-article">
+
+<p>This Privacy Policy explains how Lovydate ("Lovydate," "we," "us," or "our") collects, uses, shares, and protects information when you use our dating and social networking app or website.</p>
+
+<p><strong>Contact:</strong> <a href="mailto:support@lovydate.fun">support@lovydate.fun</a><br>
+<strong>Website:</strong> <a href="https://lovydate.fun/">https://lovydate.fun/</a></p>
+
+<h2>1. Who Can Use Lovydate</h2>
+<p>Lovydate is intended only for people aged 18 or older. People under 18 are not permitted to use the service. If we learn that an account belongs to someone under 18, we will take steps to disable the account and delete associated information, subject to any information we are legally required to retain. To report a suspected underage account, contact <a href="mailto:support@lovydate.fun">support@lovydate.fun</a>.</p>
+
+<h2>2. Information We Collect</h2>
+<p>The information we process depends on the features you use. It may include:</p>
+<ul>
+<li><strong>Account and sign-in information:</strong> name, email address, date of birth, account identifiers, and information provided by Google when you choose Google sign-in.</li>
+<li><strong>Profile information:</strong> photos, biography, interests, gender, city or location details, and other information you choose to add to your profile.</li>
+<li><strong>Social and dating activity:</strong> likes, matches, comments, posts, follows or other social interactions available in the app, and preferences you choose to share.</li>
+<li><strong>Messages and reports:</strong> messages you send to other users, support messages, and information included in reports or safety investigations.</li>
+<li><strong>Location information:</strong> location information if you grant the app the relevant device permission or choose to provide location details.</li>
+<li><strong>Technical and usage information:</strong> app and website interactions, timestamps, app version, device or browser information, diagnostic events, and technical logs generated while using the service.</li>
+</ul>
+<p>We may also receive information from Google sign-in, other users—for example, when they report an account—and service providers that help us operate Lovydate.</p>
+
+<h2>3. How We Use Information</h2>
+<p>We use information to create and secure accounts; display profiles; support dating, matching, messaging, and social networking features; respond to support requests; detect spam, fraud, harassment, and underage use; review reports and enforce our rules; maintain and improve the app and website; troubleshoot errors; and comply with legal obligations.</p>
+
+<h2>4. Profile Visibility and Information You Share</h2>
+<p>Information and content you choose to display on your profile or post publicly may be visible to other Lovydate users. Messages are shared with their intended recipients. Please think carefully before sharing personal or sensitive information. We may access or review content when necessary to respond to a report, investigate a safety concern, enforce our rules, or comply with law.</p>
+
+<h2>5. Analytics</h2>
+<p>Lovydate uses an analytics system developed and operated by our team to understand how the app and website are used and to help maintain and improve the service. This system may process technical and usage information associated with app or website activity. We do not currently use third-party advertising analytics to show ads. If our analytics practices materially change, we will update this policy as appropriate.</p>
+
+<h2>6. Advertising</h2>
+<p>Lovydate does not currently display advertisements. If we introduce advertising in the future, we will update this Privacy Policy to explain relevant data use and sharing before or when those features become available, as required by law.</p>
+
+<h2>7. How We Share Information</h2>
+<p>We may share information:</p>
+<ul>
+<li><strong>With other users:</strong> profile information and content you choose to make visible, and messages with their recipients.</li>
+<li><strong>With service providers:</strong> providers that help with hosting, databases, sign-in, email delivery, security, and technical operations. They may process information as needed to provide services to us.</li>
+<li><strong>For safety or legal reasons:</strong> when reasonably necessary to comply with law, respond to valid legal requests, investigate abuse, enforce our rules, or protect users and others.</li>
+<li><strong>For business changes:</strong> in connection with a merger, acquisition, or transfer of the service, subject to applicable law.</li>
+<li><strong>With your consent:</strong> when you direct us to share information or consent where required.</li>
+</ul>
+<p>We do not sell personal information for money. If this changes, we will update this policy and provide any notices or choices required by law.</p>
+
+<h2>8. Safety and Moderation</h2>
+<p>We may review reports and relevant content to investigate suspected fake accounts, spam, harassment, abuse, underage use, or other violations. Users should use available report and block features to protect themselves and the community. We may restrict or remove accounts that violate our rules or applicable law.</p>
+
+<h2>9. Account Deletion and Data Retention</h2>
+<p>You can delete your account using the account-deletion feature in the Lovydate app. Follow the in-app prompts to complete the deletion request.</p>
+
+<p>If you cannot access the app or need assistance, email <a href="mailto:support@lovydate.fun?subject=Lovydate%20account%20deletion">support@lovydate.fun</a> and request account deletion. We may need to verify that you control the account before processing an email request.</p>
+
+<div class="policy-notice">
+<strong>What happens when you delete your account?</strong>
+<p>When deletion is completed, your account and associated personal data are deleted from our active systems immediately. Some limited information may remain in backups temporarily until those backups are overwritten, or may be retained where required by law or reasonably necessary for security, fraud prevention, legal claims, or enforcement of our rules.</p>
+</div>
+
+<p>Where information must be retained, we limit its use to that purpose and delete it when no longer needed. Copies of content that other users previously saved or shared outside Lovydate may not be removable by us.</p>
+
+<h2>10. Your Choices and Privacy Rights</h2>
+<p>You can update profile information in the app, manage device permissions such as location through your device settings, and delete your account using the process above.</p>
+<p>Depending on where you live, you may also have rights to request access to, correction of, or deletion of your personal information, or to object to or restrict certain processing. To make a privacy request, contact <a href="mailto:support@lovydate.fun">support@lovydate.fun</a>. We may need to verify your identity before responding.</p>
+
+<h2>11. Security</h2>
+<p>We use reasonable technical and organizational measures intended to protect information. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+
+<h2>12. International Processing</h2>
+<p>Information may be processed in countries other than your own, depending on where Lovydate and its service providers operate. Where required, we take steps intended to protect information in connection with international transfers.</p>
+
+<h2>13. Third-Party Services and Links</h2>
+<p>The app or website may rely on third-party services, including Google sign-in, or link to external websites. Those services may handle information under their own privacy policies. Please review their policies where applicable.</p>
+
+<h2>14. Changes to This Policy</h2>
+<p>We may update this Privacy Policy as Lovydate changes or legal requirements develop. We will update the date at the top and provide additional notice of significant changes where required.</p>
+
+<h2>15. Contact Us</h2>
+<p>For questions, privacy requests, account deletion assistance, or reports about underage use, contact <a href="mailto:support@lovydate.fun">support@lovydate.fun</a> or visit <a href="https://lovydate.fun/">https://lovydate.fun/</a>.</p>
+
+</article>
+</main>
+
+<footer class="policy-footer">© 2026 Lovydate. All rights reserved.</footer>
+`;
+
+export default function PrivacyPolicyPage() {
   return (
     <>
       <style>{pageStyle}</style>
